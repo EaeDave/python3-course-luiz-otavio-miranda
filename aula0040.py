@@ -8,6 +8,9 @@ while True:
     multiplicar = escolha.startswith('*')
     dividir = escolha.startswith('/')
     sair = escolha.startswith('s')
+    valor1 = 0
+    valor2 = 0
+    soma = 0
     
     if somar:
         try:
