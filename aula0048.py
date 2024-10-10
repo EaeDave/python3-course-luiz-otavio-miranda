@@ -14,8 +14,12 @@ Métodos úteis:
 Create Read Update   Delete
 Criar, ler, alterar, apagar = lista[i] (CRUD)
 """
-#        0   1   2   3
-lista = [10, 20, 30, 40]
+lista_a = [1, 2, 3]
+lista_b = [4, 5, 6]
+lista_c = lista_a + lista_b  # Polimorfismo, nesse caso o operador  + está concatenando as duas listas
+print(lista_c)
 
-lista.insert(0, 5)
-print(lista)  # [5, 10, 20, 30, 40]
+lista_nomes = ['David', 'Camila', 'Amaro']
+lista_sobrenomes = ['Rodrigues', 'Santos', 'Silva']
+lista_nomes.extend(lista_sobrenomes)  # Este método não retorna nada, mas muda o valor do objeto
+print(lista_nomes)
