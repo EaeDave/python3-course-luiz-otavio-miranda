@@ -8,8 +8,11 @@ podem ser alcançados.
 """
 
 nome = 'David'  # o valor de nome é 'David'
+variavel_global = 600
 
 def escopo():
+    global variavel_global
+    variavel_global = 300
     x = 1  # Essa variável está no escopo da função
     nome = 'Rodrigues'  # aqui o valor de nome é 'Rodrigues'
 
@@ -18,6 +21,7 @@ def escopo():
         y = 5  # Essa variável está no escopo interno de outra função
         print(y)
         print(nome)
+        print(variavel_global)
 
 
     print(x)
